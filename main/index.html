@@ -1,0 +1,181 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Log in | Job Tracker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="bootstrap-5.2\css\bootstrap.min.css" rel="stylesheet"></script>
+		<script src="bootstrap-5.2\js\bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<style type="text/css">
+		
+	</style>
+	<body style="background-color: grey;">
+		<div class="container-fluid" >
+			<div class="row justify-content-center align-items-center">
+				<div class="col-sm-12 col-md-6">
+					<img class="mx-auto d-block img-fluid" style="width: 500px;height: 250px;" src="images/logo.png">
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="container-fluid">
+						<div class="col-sm-12 col-md-10 col-lg-8">
+					        <form>
+					          <div class="divider d-flex align-items-center my-4">
+					            
+					          </div>
+					          <br>
+					          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+					           <p class="lead fw-normal mb-3 me-3" style="font-size:22px;color: white;font-family: times new roman;font-weight:bold;">Sign in</p>
+					            
+					          </div>
+
+					          <!-- Email input -->
+					          <div class="form-outline mb-4">
+					            <input type="email" id="email" class="form-control form-control-lg"
+					              placeholder="Enter a valid email address" />
+					            <label class="form-label" for="email" style="font-size:18px;color: white;font-family: times new roman;">Email address</label>
+					          </div>
+
+					          <!-- Password input -->
+					          <div class="form-outline mb-3">
+					            <input type="password" id="password" class="form-control form-control-lg"
+					              placeholder="Enter password" />
+					            <label class="form-label" for="password" style="font-size:18px;color: white;font-family: times new roman;">Password</label>
+					          </div>
+
+					          <div class="d-flex justify-content-between align-items-center">
+					            <!-- Checkbox -->
+					            <div class="form-check mb-0">
+					              <input class="form-check-input me-2" type="checkbox" value="" id="Remember" />
+					              <label class="form-check-label" for="Remember" style="font-size:16px;color: black;font-family: times new roman;">
+					                Remember me
+					              </label>
+					            </div>
+					            <a href="#!" class="text-body" data-bs-toggle="modal" data-bs-target="#forgotpassword">Forgot password?</a>
+					          </div>
+
+					          <div class="text-center text-lg-start mt-4 pt-2">
+					            <button type="button" name ="login" class="btn btn-primary btn-lg"
+					              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+					            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+					                class="link-danger" data-bs-toggle="modal" data-bs-target="#createaccount">Register</a></p>
+					          </div>
+
+					        </form>
+					    </div>
+					</div> 
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-sm-12 col-md-12">
+					<div class="col copyright">
+			      <p style="font-family:Times New Roman;font-size: 12px;color: black;" class=""><small class="text-black-50">© 2022. All Rights Reserved.RSSLKENYA</small></p>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!--create account modal-->
+	<div class="modal fade" id="createaccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalPromoLabel4" aria-hidden="true" data-tor-parent="show">
+		  <div class="modal-dialog modal-dialog-scrollable no-transform" >
+		    <div class="modal-content" data-tor="show(p):{rotateX.from(90) pull.up(half) scale.from(125)} perspective-self(2000px) quad slow" data-tor-group="[data-tor] => delay(/+100ms/) quad slow">
+		      <div class="modal-header" style="background-color:black;">
+		        <h5 style="font-family: times new roman; color: white;" class="modal-title" id="exampleModalPromoLabel4" data-tor="show(p):{fade.in pull.left(md)}"><img src="images/logo.png" style="width:120px;height: 60px;">Create an Account</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		        	<div class="mb-3">
+		            <label for="recipient-name" class="col-form-label">Full Name:</label>
+		            <input type="fname" placeholder="Full Name" class="form-control" id="fname" required>
+		          </div>
+		          <div class="mb-3">
+		            <label for="recipient-name" class="col-form-label">Gender:</label>
+		            <select class="form-control" id="gender" required>
+		            	<option>Select a Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                     </select>
+		          </div>
+		          <div class="mb-3">
+		            <label for="recipient-name" class="col-form-label">Birthday:</label>
+		            <input type="date" placeholder="Birthday" class="form-control" id="birthday" required>
+		          </div>
+		          <div class="mb-3">
+		            <label for="country" class="col-form-label">Country:</label>
+		            <input type="country" placeholder="Country" class="form-control" id="country" required>
+		          </div>
+		          <div class="mb-3">
+		            <label for="recipient-name" class="col-form-label">Email:</label>
+		            <input type="email" placeholder="Email" class="form-control" id="email" required>
+		          </div>
+		          <div class="mb-3">
+		            <label for="recipient-name" class="col-form-label">Password:</label>
+		            <input type="user_pass" placeholder="Password" class="form-control" id="user_pass" required>
+		          </div>          
+		          
+		          <div class="mb-3 d-flex justify-content-center">
+		            
+		            <input type="checkbox" name="terms" style=" font-size: 19px;" id="terms" onchange="activateButton(this)"><pre style="font-size:18px; fontfamily:Times new Roman; cursor: pointer; color:grey;">  I Agree to terms and conditions.</pre>
+		          </div>
+		          <div class="mt-sm-3 d-flex justify-content-center ">
+		          <button style=" font-size: 19px; font-weight: bold;" name="submit" id="submit" disabled="true" type="submit" class="btn mb-2 btn-primary" data-tor="show(p):{scale.from(125) fade.in}">submit</button>
+		         </div>
+
+		        </form>
+		      </div>
+		      <div class="modal-footer" style="background-color: black;">
+		        <button type="button" class="btn mb-2 btn-danger" data-bs-dismiss="modal" data-tor="show(p):scale.from(0)">Close</button>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!--forgotpassword modal-->
+		<div class="modal fade" id="forgotpassword" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalPromoLabel4" aria-hidden="true" data-tor-parent="show">
+		  <div class="modal-dialog modal-dialog-centered no-transform">
+		    <div class="modal-content" data-tor="show(p):{rotateX.from(90) pull.up(half) scale.from(125)} perspective-self(2000px) quad slow" data-tor-group="[data-tor] => delay(/+100ms/) quad slow">
+		      <div class="modal-header" style="background-color:black;">
+		        <h5 style="font-family: times new roman; color: white;" class="modal-title" id="exampleModalPromoLabel4" data-tor="show(p):{fade.in pull.left(md)}"><img src="images/logo.png" style="width:120px;height: 60px;">Recover Password</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        <p data-tor="show(p):reveal(up)">We will get back to you via Email</p>
+		        <form>
+		          <div class="mb-3 mt-3">
+		            <label for="recipient-name" class="col-form-label">Email:</label>
+		            <input type="email" placeholder="Email" class="form-control" id="email" required>
+		          </div>
+		          <div class="mt-sm-3 d-flex justify-content-center ">
+		          <button style=" font-size: 19px; font-weight: bold;" name="submit" id="submit" type="submit" class="btn mb-2 btn-primary" data-tor="show(p):{scale.from(125) fade.in}">submit</button>
+		         </div>
+
+		        </form>
+		      </div>
+		      <div class="modal-footer" style="background-color:black;">
+		        <button type="button" class="btn mb-2 btn-danger" data-bs-dismiss="modal" data-tor="show(p):scale.from(0)">Close</button>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<script>
+		 function disableSubmit() {
+		  document.getElementById("submit").disabled = true;
+		 }
+
+		  function activateButton(element) {
+
+		      if(element.checked) {
+		        document.getElementById("submit").disabled = false;
+		       }
+		       else  {
+		        document.getElementById("submit").disabled = true;
+		      }
+
+		  }
+		</script>
+
+	</body>
+</html>
